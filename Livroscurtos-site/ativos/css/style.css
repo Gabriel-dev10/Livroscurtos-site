@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: azure;
+    font-size: 50px;
+}
+
+.container{
+    background: #d18706;
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas: "i f";
+    
+
+    justify-content: center;
+    align-content: center;
+
+}
+
+.leftbox{
+    grid-area: i;
+    width: 500px;     
+    height: 490px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+.perfil img{
+    width: 500px;
+    height: 532px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.rigthbox{
+    background: #000000;
+    grid-area: f;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.rigthbox h1{
+    color: #d18706;
+    text-align: center;
+    font-size: 60px;
+    margin: 20px;
+}
+
+.rigthformulario {
+    display: flex;     
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    min-width: 350px;
+    margin-top: 40px;
+    height: 403px;
+}
+
+.rigthbox p {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.rigthbox input{
+    padding: 8px 30px;
+    font-size: 12px;
+    background: azure;
+    border-radius: 10px;
+    border: 0;
+    color: black;
+}
+
+.rigthbox button{
+    padding: 8px 30px;
+    font-size: 12px;
+    min-width: 150px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    background: #d18706;
+    border-radius: 10px;
+    border: 0;
+    color:azure;
+    
+}
+
+.mediasocial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.mediasocial img{
+    margin: 8px;
+    width: 40px;
+}
+
+.senha-criar {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.senha-criar a{
+    text-decoration: none;
+    color: azure;
+}
+
+.senha-criar span{
+    color: #d18706;
+}
+
+@media only screen and (max-width:820px) {
+    .container{
+        grid-template-areas: "f";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .rigthbox{
+        text-align: center;
+    }
+    .leftbox{
+        display: none;
+    }
+    .perfil img{
+        display: none;
+    }
+}
